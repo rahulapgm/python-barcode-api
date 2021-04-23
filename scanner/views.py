@@ -47,3 +47,8 @@ def _scan_barcode(img_url=None, stream=None):
 			return barcode[0].data.decode("utf-8")
 
 	return ""
+
+
+def home(request):
+	data = {"success": False, "result": ""}
+	return JsonResponse(data)
