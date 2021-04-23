@@ -19,6 +19,6 @@ import scanner.views
 
 urlpatterns = [
         url(r'^admin/', admin.site.urls),
-        url(r'^home', scanner.views.home),
+        url(r'^home/', scanner.views.home),
         url(r'^barcode_scanner/get-barcode-data$', scanner.views._get_barcode_data),
 ]
